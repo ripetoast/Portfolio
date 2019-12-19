@@ -1,0 +1,50 @@
+@import "./variables";
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+//Sections
+@import "./headerSection";
+@import "./aboutSection";
+@import "./technologiesSection";
+@import "./detailsSection";
+@import "./projectsSection";
+
+.custom_main_hr{
+    height: 0.5rem;
+    margin-left: 15px;
+    margin-bottom: -3px;
+    background-image: -webkit-linear-gradient(left, rgba($col_darkturq,.8), rgba($col_darkturq,.6), rgba(0,0,0,0));
+}
+
+.custom_main_container{
+    margin: 0;
+}
+
+.custom_main_topBg{
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-image: url("./top_bg-01.svg");
+    background-repeat: no-repeat;
+    padding-bottom: 15rem;
+}
+
+.custom_main_bottomBg{
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    position: relative;
+    top: -40px;
+    background-color: white;
+}
+
+html { 
+    scroll-behavior: smooth; 
+} 
+
+//When window becomes medium size
+@media(max-width: 768px){
+    .custom_main_topBg{
+        padding-bottom: 5rem;
+    }
+}

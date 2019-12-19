@@ -1,0 +1,50 @@
+
+.custom_about_headLine{
+    font-family: 'Lilita One', cursive;
+    font-size: 7rem;
+
+    &:first-letter{
+        border-bottom: 0.2em solid $col_lightBlack;
+    }
+}
+
+.custom_about_desc{
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 0.3rem 0.3rem 0.3rem rgba($col_lightBlack, 0.3);
+}
+
+.custom_about_profilePic{
+    border-radius: 50%;
+    border: 0.4rem solid $col_white;
+    box-shadow: 0.3rem 0.3rem 0.3rem rgba($col_lightBlack, 0.3);
+    width: 15rem;
+    height: 15rem;
+    max-width: 15rem;
+    max-height: 15rem;
+    background-image: url("https://c.pxhere.com/photos/d5/a9/dog_labrador_light_brown_pet_hundeportrait_dog_head_in_the_free_profile-655507.jpg!d");
+    background-size: cover;
+    transition: all 0.25s;
+    &:hover{
+        transform: scale(1.15);
+    }
+}
+
+//When window becomes medium size
+@media(max-width: 768px){
+    .custom_about_headLine{
+        font-size: 3.5rem;
+        &:first-letter{
+            border-bottom: 0.1em solid $col_lightBlack;
+        }
+    }
+}
+
+//When window becomes extra small
+@media(max-width: 576px){
+    .custom_about_headLine{
+        font-size: 3rem;
+        &:first-letter{
+            border-bottom: 0.1em solid $col_lightBlack;
+        }
+    }
+}

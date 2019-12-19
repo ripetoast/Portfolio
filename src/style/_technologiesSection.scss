@@ -1,0 +1,49 @@
+.custom_tech_card{
+    text-align: center;
+    border-style: none;
+    transition: all 0.4s;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    .custom_tech_navIcon{
+        color: $col_turq;
+        font-size: 6.5rem;
+        opacity: 0.6;
+        transition: all 0.4s;
+        &:hover{
+            opacity: 1.0;
+        } 
+    }
+
+    &:hover{
+        transform: scale($techItem_scale);
+    } 
+}
+
+//When window becomes large size
+@media(max-width: 992px){
+    .custom_tech_card{
+        .custom_tech_navIcon{
+            font-size: 5.5rem;
+        }
+    }
+}
+
+//When window becomes medium size
+@media(max-width: 768px){
+    .custom_tech_card{
+        .custom_tech_navIcon{
+            font-size: 4.5rem;
+        }
+    }
+}
+
+
+
+//When window becomes extra small
+@media(max-width: 576px){
+   .custom_tech_card{
+        .custom_tech_navIcon{
+            font-size: 3.5rem;
+        }
+    }
+}

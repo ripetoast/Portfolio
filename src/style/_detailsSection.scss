@@ -1,0 +1,70 @@
+.custom_details_box{
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 1.25rem;
+    transition:0.5s;
+
+    .custom_details_text{
+        font-size: 1.2rem;
+        text-align: left;
+        padding: 1.4rem;
+        color: $col_grey;
+    }
+
+    &:hover{
+        box-shadow:0 10px 30px rgba($col_lightBlack,.1);
+    }
+}
+
+.custom_details_icon{
+    color: $col_navy;
+    font-size: 5.5rem;
+    padding: 1.4rem;
+}
+
+//When window becomes medium size
+@media(max-width: 768px){
+    .custom_details_box{
+        font-family: 'Ubuntu', sans-serif;
+        width: 100%;
+        font-size: 1.8rem;
+        border-radius: 1.25rem;
+        transition:0.5s;
+
+        .custom_details_text{
+            font-size: 1rem;
+            text-align: left;
+            padding: 1.2rem;
+            color: $col_grey;
+        }
+    }
+    .custom_details_icon{
+        color: $col_navy;
+        font-size: 3.5rem;
+        padding: 0.5rem;
+    }
+}
+
+//When window becomes extra small
+@media(max-width: 576px){
+    .custom_details_box{
+        font-family: 'Ubuntu', sans-serif;
+        width: 100%;
+        font-size: 1.8rem;
+        border-radius: 1.25rem;
+        transition:0.5s;
+
+        .custom_details_text{
+            font-size: 1rem;
+            text-align: left;
+            padding: 1.2rem;
+            color: $col_grey;
+        }
+    }
+    .custom_details_icon{
+        color: $col_navy;
+        font-size: 3.5rem;
+        padding: 0.5rem;
+    }
+}

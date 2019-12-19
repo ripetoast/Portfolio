@@ -1,0 +1,294 @@
+.custom_projects_headLine{
+    font-family: 'Lilita One', cursive;
+    font-size: 7rem;
+    margin: 2rem 0;
+    &:first-letter{
+        border-bottom: 0.2em solid $col_lightBlack;
+    }
+}
+
+.custom_projects_techIcon{
+    color: $col_darkturq;
+    font-size: 2.6rem;
+    margin: 0.6rem;
+}
+
+.custom_projects_popover{
+    padding: 0.6rem;
+}
+
+.custom_projects_card{
+    transition: all .35s ease;
+    &:hover{
+        box-shadow: 0 10px 30px rgba($col_darkturq, .3);
+    }
+}
+
+.custom_projects_cardTop{
+    overflow: hidden;
+    background: $col_lightBlack;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+
+    &:before{
+        content: "";
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background: $col_turq;
+        position: absolute;
+        // top: -5rem;
+        // left: 1rem;
+        opacity: 0;
+        z-index: 1;
+        transition: all .35s ease;
+    }
+
+    img{
+        height: auto;
+        transform: scale(1) rotate(0);
+        transition: all .35s ease-out;
+    }
+
+    .custom_projects_boxContent{
+        padding: 20px 15px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1
+    }
+
+    .custom_projects_title{
+        font-size: 20px;
+        font-weight: 800;
+        color: #fff;
+        margin: 0 0 5px;
+        opacity: 0;
+        transform: translate(-20px,-20px);
+        transition: all .35s ease-out;
+    }
+
+    .custom_projects_post{
+        display: inline-block;
+        font-size: 16px;
+        color:#fff;
+        opacity: 0;
+        transform: translate(-20px,-20px);
+        transition: all .35s ease-out;
+    }
+
+    .custom_projects_navIcon {
+        margin: 0;
+        position: absolute;
+    }
+
+    .custom_projects_navIcon{
+        padding: 7px 5px;
+        list-style: none;
+        background: $col_navy;
+        border-radius: 0.8rem 0 0 0 ;
+        bottom: -100%;
+        right: 0;
+        z-index: 2;
+        transition: all .35s ease-out;
+
+        li{
+            display: block;
+            margin: 10px 0;
+        }
+
+        a{
+            display: block;
+            width: 2rem;
+            text-align: center;
+            height: 2rem;
+            line-height: 2rem;
+            border-radius: 0.7rem;
+            font-size: 1.1rem;
+            color: $col_white;
+            transition: all .35s ease-out;
+        }
+    }
+
+    &:hover{
+        img{
+            filter: sepia(20%);
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        .custom_projects_title{
+            opacity: 1;
+            transform: translate(0,0);
+            transition-delay: 0.15s;
+        }
+
+        .custom_projects_post{
+            opacity: 1;
+            transform: translate(0,0);
+            transition-delay: 0.15s;
+        }
+
+        .custom_projects_navIcon{
+            bottom: 0;
+
+            li{
+                a{
+                    &:hover{
+                        color :$col_white;
+                        box-shadow: 0 0 10px $col_lightBlack inset, 0 0 0 3px $col_white;
+                    }
+                }
+            }
+        }
+
+        &:before{
+            opacity: .5;
+            transform: translate(-1rem, -4rem) scale(8);
+            transition-delay: .15s;
+        }
+    }
+}
+
+.custom_projects_carousel{
+    width: 100%;
+    min-height: 860px;
+}
+
+.custom_projects_nextIcon, .custom_projects_prevIcon{
+    color: $col_lightBlack;
+    margin: 0;
+    font-size: 4.5rem;
+    vertical-align: text-bottom;
+}
+
+//Media Queries - Desktop First Design
+//When window becomes extra large
+@media(max-width: 1200px){
+    .custom_projects_carousel{
+        width: 100%;
+        min-height: 760px;
+    }
+}
+
+//When window becomes large size
+@media(max-width: 992px){
+    .custom_projects_headLine{
+        font-size: 5.5rem;
+        margin: 2rem 0;
+    }
+
+    .custom_projects_cardTop{
+        &:before{
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        .custom_projects_title{
+            font-size: 1.1rem;
+        }
+
+        .custom_projects_navIcon{
+            padding: 1px 1px;
+            border-radius: 0.8rem 0 0 0 ;
+
+            li{
+                margin: 5px 0;
+            }
+
+            a{
+                display: block;
+                width: 1.5rem;
+                height: 1.5rem;
+                line-height: 1.5rem;
+                border-radius: 0.7rem;
+                font-size: 0.7rem;
+            }
+        }
+
+        &:hover{
+            .custom_projects_navIcon{
+                li{
+                    a{
+                        &:hover{
+                            color :$col_white;
+                            box-shadow: 0 0 5px $col_lightBlack inset, 0 0 0 2px $col_white;
+                        }
+                    }
+                }
+            }
+
+            &:before{
+                transform: translate(-1rem, -4rem) scale(8);
+            }
+        }
+    }
+
+    .custom_projects_carousel{
+        width: 100%;
+        min-height: 630px;
+    }
+}
+
+//When window becomes medium size
+@media(max-width: 768px){
+    .custom_projects_headLine{
+        font-size: 5rem;
+        margin: 2rem 0;
+        &:first-letter{
+            border-bottom: 0.1em solid $col_lightBlack;
+        }
+    }
+
+    .custom_projects_cardTop{
+        &:before{
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .custom_projects_title{
+            font-size: 1.5rem;
+        }
+
+        .custom_projects_navIcon{
+            padding: 7px 5px;
+
+            li{
+                margin: 10px 0;
+            }
+
+            a{
+                display: block;
+                width: 2rem;
+                height: 2rem;
+                line-height: 2rem;
+                border-radius: 0.7rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        &:hover{
+            &:before{
+                transform: translate(-1rem, -4rem) scale(8);
+            }
+        }
+    }
+}
+
+//When window becomes extra small
+@media(max-width: 576px){
+    .custom_projects_headLine{
+        font-size: 4rem;
+        margin: 2rem 0;
+        &:first-letter{
+            border-bottom: 0.1em solid $col_lightBlack;
+        }
+    }
+}
+
+//When window becomes extra small
+@media(max-width: 576px){
+    .custom_projects_carousel{
+        width: 100%;
+        min-height: 420px;
+    }
+}
