@@ -1,5 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const About = () => {
     return (
@@ -17,20 +18,42 @@ const About = () => {
           </Fade>
           <Fade right>
             <div className="col-lg-8 col-10 jumbotron my-4 custom_about_desc">
-              <p className="lead">Lorem, ipsum dolor.</p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Cumque, nemo.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur possimus inventore assumenda, rem ipsum distinctio
-                eos consectetur asperiores natus officiis voluptate expedita
-                maiores exercitationem maxime quas illum dolore recusandae cum
-                modi itaque. In aliquam nesciunt possimus sapiente minima,
-                cumque dolorum velit eum molestiae consequuntur reiciendis
-                voluptates ducimus explicabo hic. Omnis.
-              </p>
+              <div className="row justify-content-center">
+                <p className="lead">
+                  Michael Lau Hing Yim
+                </p>
+              </div>
+              <div className="row justify-content-center mt-0 mb-4">
+                <p className="small">
+                  Web Developer. Web Designer. 
+                </p>
+              </div>
+              <div className="row justify-content-center">
+                <div className="col-3">
+                  <a href="https://www.linkedin.com/in/mlhy/">
+                    <FontAwesomeIcon
+                      className="custom_about_navIcon"
+                      icon={['fab', "linkedin"]}
+                    />
+                  </a>
+                </div>
+                <div className="col-3">
+                  <a href="https://mediamikemotel.wordpress.com/">
+                    <FontAwesomeIcon
+                      className="custom_about_navIcon"
+                      icon={['fab', "wordpress"]}
+                    />
+                  </a>
+                </div>
+                <div className="col-3">
+                  <a href="https://github.com/ripetoast">
+                    <FontAwesomeIcon
+                      className="custom_about_navIcon"
+                      icon={['fab', "github"]}
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </Fade>
         </div>

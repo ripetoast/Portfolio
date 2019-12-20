@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const DetailBox = (props) => {
     return(
-        <div className="text-center custom_details_box">
+        <div className="text-center col-lg-5 col-12 m-2 m-lg-3 custom_details_box">
             <div className="custom_details_icon">
                 <FontAwesomeIcon
                     icon={props.icon}
@@ -11,10 +11,10 @@ const DetailBox = (props) => {
             </div>
             <div className="custom_details_body">
                 <div className="custom_details_title">
-                    DetailBox
+                    {props.title}
                 </div>
                 <p className="custom_details_text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis dolor, perspiciatis perferendis unde eligendi minima nemo ex. Ipsa nobis vitae, nam totam officia autem fugiat optio veniam assumenda, minima tempora!
+                    {props.text}
                 </p>
             </div>
         </div>

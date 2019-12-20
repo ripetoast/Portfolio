@@ -47,7 +47,7 @@ class ProjectCard extends React.Component{
             {/* Card Top */}
             <div className="custom_projects_cardTop">
               <img
-                src="http://bestjquery.com/tutorial/hover-effect/demo160/images/img-1.jpg"
+                src={this.props.imageLink}
                 alt=""
                 className="card-img-top"
               />
@@ -59,7 +59,7 @@ class ProjectCard extends React.Component{
                   overlay={this.renderIconPopover("Demo")}
                 >
                 <li>
-                  <a href="#">
+                    <a href={this.props.demoLink} target="_blank">
                     <FontAwesomeIcon
                       icon="desktop"
                     />
@@ -73,7 +73,7 @@ class ProjectCard extends React.Component{
                   overlay={this.renderIconPopover("Github")}
                 >
                 <li>
-                  <a href="#">
+                    <a href={this.props.githubLink} target="_blank">
                     <FontAwesomeIcon
                         icon={['fab', 'github']}
                     />

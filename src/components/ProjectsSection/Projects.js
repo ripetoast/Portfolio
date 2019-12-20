@@ -37,7 +37,6 @@ class Projects extends React.Component {
         windowWidth: window.innerWidth,
         windowHeight: window.innerHeight 
       });
-      console.log(this.state.windowWidth);
     };
 
     //Determine the number of projects to show on a single slide of the carousel
@@ -64,6 +63,9 @@ class Projects extends React.Component {
                 projectDescription={
                   this.state.projectsData[innerProject].projectDescription
                 }
+                githubLink={this.state.projectsData[innerProject].githubLink}
+                demoLink={this.state.projectsData[innerProject].demoLink}
+                imageLink={this.state.projectsData[innerProject].imageLink}
               />
             </div>
           );

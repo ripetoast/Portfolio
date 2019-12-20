@@ -1,26 +1,30 @@
 {
-    "Keywords": {
-        "projectDescription": "Test",
-        "technologies": ["js","php"]
+    "List Gen": {
+        "projectDescription": "Application developed with React that takes a list of keywords and shuffles their order. This is especially useful for testing the user when memorising words. I use them for my Japanese studies.",
+        "technologies": ["js","react"],
+        "imageLink": "./images/ListGen.svg",
+        "demoLink": "https://simplewordgen.herokuapp.com/",
+        "githubLink": "https://github.com/ripetoast/Word-Gen"
     },
-    "test": {
-        "projectDescription": "Test",
-        "technologies": ["js","php"]
+    "Accordion Form": {
+        "projectDescription": "This form makes use of the redux-form library. It demonstrates the use of combining three different forms int one by storing data in the redux store. ",
+        "technologies": ["js","react"],
+        "imageLink": "./images/accordionForm.png",
+        "demoLink": "https://blissful-bell-09bf39.netlify.com/",
+        "githubLink": "https://github.com/ripetoast/React-Accordion-Form"
     },
-    "test2": {
-        "projectDescription": "Test",
-        "technologies": ["js","php"]
+    "Blog App": {
+        "projectDescription": "Simple React Application that Uses the JSON Placeholder API to generate list of different blog posts",
+        "technologies": ["js","react"],
+        "imageLink": "./images/blogApp.png",
+        "demoLink": "https://cranky-leavitt-3dad8e.netlify.com/",
+        "githubLink": "https://github.com/ripetoast/BlogApp"
     },
-    "test3": {
-        "projectDescription": "Test",
-        "technologies": ["js","php"]
-    },
-    "test4": {
-        "projectDescription": "Test",
-        "technologies": ["js","php"]
-    },
-    "Emaily": {
-        "projectDescription": "Test",
-        "technologies": ["js","php"]
+    "Email Deploy App": {
+        "projectDescription": "The email deploy app uses NodeJS, ExpressJS and React. This application makes use of many libraries including Google OAuth, Passport and SendGrid. Users can send mass email to people and is then informed when other users have responded to those emails making it a useful app for surveys.",
+        "technologies": ["js","react", "node-js"],
+        "imageLink": "./images/emailApp.png",
+        "demoLink": "https://shrouded-lowlands-84645.herokuapp.com/surveys/new",
+        "githubLink": "https://github.com/ripetoast/Email-Deploy"
     }
 }

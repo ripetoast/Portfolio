@@ -29,6 +29,24 @@
     }
 }
 
+.custom_about_navIcon{
+    color: $col_bgturq;
+    font-size: 7.5rem;
+    opacity: 0.8;
+    transition: all 0.4s;
+    &:hover{
+        opacity: 1.0;
+        transform: scale(1.2);
+    } 
+}
+
+//When window becomes large size
+@media(max-width: 992px){
+    .custom_about_navIcon{
+        font-size: 6.5rem;
+    }
+}
+
 //When window becomes medium size
 @media(max-width: 768px){
     .custom_about_headLine{
@@ -36,6 +54,10 @@
         &:first-letter{
             border-bottom: 0.1em solid $col_lightBlack;
         }
+    }
+
+    .custom_about_navIcon{
+        font-size: 5.5rem;
     }
 }
 
@@ -46,5 +68,9 @@
         &:first-letter{
             border-bottom: 0.1em solid $col_lightBlack;
         }
+    }
+
+    .custom_about_navIcon{
+        font-size: 3.5rem;
     }
 }

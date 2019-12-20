@@ -25,7 +25,7 @@ class Technology extends React.Component {
           overlay={this.renderBrandPopover()}
         >
           <FontAwesomeIcon
-            className="custom_tech_navIcon"
+            className="custom_tech_navIcon my-4"
             icon={['fab', this.props.icon]}
           />
         </OverlayTrigger>
